@@ -25,7 +25,7 @@ public enum TennisPlayerScore {
 
 	/**
 	 * Returns the next {@link TennisPlayerScore} towards victory.
-	 * @param enemyScore The enemy's score which is relevant for the computation of this score.
+	 * @param enemyScore The enemy's score which is relevant for the computation of the nexr score.
 	 * @return A immutable {@link Enum} object representing the next score.
 	 */
 	public TennisPlayerScore winPoint(TennisPlayerScore enemyScore) {
