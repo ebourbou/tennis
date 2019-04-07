@@ -1,11 +1,24 @@
 package tennis.domain;
 
-import lombok.Data;
-import lombok.NonNull;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@Data
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@RequiredArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
+@EqualsAndHashCode
 public final class Player {
 
-    private @NonNull String name;
+	@Id
+	private @NonNull String name;
 
 }
